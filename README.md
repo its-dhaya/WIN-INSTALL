@@ -12,7 +12,7 @@ Wraps `winget` and automatically fixes PATH and environment variables after ever
 Open **any PowerShell window** and paste:
 
 ```powershell
-irm https://raw.githubusercontent.com/its-dhaya/wininstall/main/get.ps1 | iex
+irm https://raw.githubusercontent.com/its-dhaya/WIN-INSTALL/main/get.ps1 | iex
 ```
 
 That's it. No cloning. No downloading. No setup steps.  

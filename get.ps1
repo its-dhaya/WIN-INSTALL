@@ -2,14 +2,14 @@
 #  WinInstall - Remote Bootstrap
 #  Usage (paste in any PowerShell window):
 #
-#    irm https://raw.githubusercontent.com/its-dhaya/wininstall/main/get.ps1 | iex
+#    irm https://raw.githubusercontent.com/its-dhaya/WIN-INSTALL/main/get.ps1 | iex
 #
 # ==============================================================================
 
 Set-StrictMode -Version Latest
 
-$REPO_OWNER   = "its-dhaya"           # <-- change this
-$REPO_NAME    = "wininstall"              # <-- change this if repo name differs
+$REPO_OWNER   = "its-dhaya"
+$REPO_NAME  = "WIN-INSTALL"
 $BRANCH       = "main"
 $BASE_URL     = "https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/$BRANCH/WinInstall"
 $PACKAGES_URL = "$BASE_URL/packages"
