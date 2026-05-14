@@ -1,0 +1,161 @@
+{
+  "_category": "Build Tools",
+  "_description": "Compilers, build systems, and package managers",
+
+  "git": {
+    "aliases": ["git-scm"],
+    "winget_id": "Git.Git",
+    "display_name": "Git",
+    "description": "Distributed version control system",
+    "install_dir_hints": [
+      "C:\\Program Files\\Git"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\Git\\cmd",
+      "C:\\Program Files\\Git\\bin"
+    ],
+    "env_vars": {
+      "GIT_HOME": "C:\\Program Files\\Git"
+    },
+    "verify_cmd": "git --version",
+    "post_install_msg": "Git installed! Use 'git' from any terminal."
+  },
+
+  "maven": {
+    "aliases": ["mvn"],
+    "winget_id": "Apache.Maven",
+    "display_name": "Apache Maven",
+    "description": "Java build and dependency management tool",
+    "install_dir_hints": [
+      "C:\\Program Files\\Maven\\apache-maven*",
+      "C:\\ProgramData\\chocolatey\\lib\\maven\\tools\\apache-maven*"
+    ],
+    "path_additions": [
+      "{install_dir}\\bin"
+    ],
+    "env_vars": {
+      "MAVEN_HOME": "{install_dir}",
+      "M2_HOME":    "{install_dir}"
+    },
+    "verify_cmd": "mvn --version",
+    "post_install_msg": "Maven installed! MAVEN_HOME is set. Use 'mvn' from any terminal."
+  },
+
+  "gradle": {
+    "aliases": [],
+    "winget_id": "Gradle.Gradle",
+    "display_name": "Gradle",
+    "description": "Gradle build automation tool",
+    "install_dir_hints": [
+      "C:\\Program Files\\Gradle\\gradle*",
+      "C:\\Gradle\\gradle*"
+    ],
+    "path_additions": [
+      "{install_dir}\\bin"
+    ],
+    "env_vars": {
+      "GRADLE_HOME": "{install_dir}"
+    },
+    "verify_cmd": "gradle --version",
+    "post_install_msg": "Gradle installed! GRADLE_HOME is set."
+  },
+
+  "cmake": {
+    "aliases": [],
+    "winget_id": "Kitware.CMake",
+    "display_name": "CMake",
+    "description": "Cross-platform build system",
+    "install_dir_hints": [
+      "C:\\Program Files\\CMake"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\CMake\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "cmake --version",
+    "post_install_msg": "CMake installed! Use 'cmake' from any terminal."
+  },
+
+  "make": {
+    "aliases": ["gnumake"],
+    "winget_id": "GnuWin32.Make",
+    "display_name": "GNU Make",
+    "description": "GNU Make build tool",
+    "install_dir_hints": [
+      "C:\\Program Files (x86)\\GnuWin32\\bin"
+    ],
+    "path_additions": [
+      "C:\\Program Files (x86)\\GnuWin32\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "make --version",
+    "post_install_msg": "GNU Make installed! Use 'make' from any terminal."
+  },
+
+  "gh": {
+    "aliases": ["github-cli"],
+    "winget_id": "GitHub.cli",
+    "display_name": "GitHub CLI",
+    "description": "GitHub's official command-line tool",
+    "install_dir_hints": [
+      "C:\\Program Files\\GitHub CLI"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\GitHub CLI"
+    ],
+    "env_vars": {},
+    "verify_cmd": "gh --version",
+    "post_install_msg": "GitHub CLI installed! Run 'gh auth login' to authenticate."
+  },
+
+  "curl": {
+    "aliases": [],
+    "winget_id": "curl.curl",
+    "display_name": "curl",
+    "description": "Command-line tool for transferring data",
+    "install_dir_hints": [
+      "C:\\Program Files\\curl\\bin"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\curl\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "curl --version",
+    "post_install_msg": "curl installed! Use 'curl' from any terminal."
+  },
+
+  "ffmpeg": {
+    "aliases": [],
+    "winget_id": "Gyan.FFmpeg",
+    "display_name": "FFmpeg",
+    "description": "FFmpeg multimedia processing framework",
+    "install_dir_hints": [
+      "C:\\Program Files\\ffmpeg",
+      "C:\\ffmpeg"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\ffmpeg\\bin"
+    ],
+    "env_vars": {
+      "FFMPEG_HOME": "C:\\Program Files\\ffmpeg"
+    },
+    "verify_cmd": "ffmpeg -version",
+    "post_install_msg": "FFmpeg installed! Use 'ffmpeg' from any terminal."
+  },
+
+  "7zip": {
+    "aliases": ["7z", "sevenzip"],
+    "winget_id": "7zip.7zip",
+    "display_name": "7-Zip",
+    "description": "7-Zip file archiver",
+    "install_dir_hints": [
+      "C:\\Program Files\\7-Zip"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\7-Zip"
+    ],
+    "env_vars": {},
+    "verify_cmd": "7z i",
+    "post_install_msg": "7-Zip installed! Use '7z' from any terminal."
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "_category": "Languages",
+  "_description": "Programming language runtimes and SDKs",
+
+  "python": {
+    "aliases": ["python3", "py"],
+    "winget_id": "Python.Python.3.12",
+    "display_name": "Python 3.12",
+    "description": "Python programming language runtime",
+    "install_dir_hints": [
+      "%LOCALAPPDATA%\\Programs\\Python\\Python312",
+      "%LOCALAPPDATA%\\Programs\\Python\\Python311",
+      "%LOCALAPPDATA%\\Programs\\Python\\Python310",
+      "C:\\Python312",
+      "C:\\Python311"
+    ],
+    "path_additions": [
+      "{install_dir}",
+      "{install_dir}\\Scripts"
+    ],
+    "env_vars": {
+      "PYTHON_HOME": "{install_dir}"
+    },
+    "verify_cmd": "python --version",
+    "post_install_msg": "Python installed! Use 'python' and 'pip' from any terminal."
+  },
+
+  "java": {
+    "aliases": ["jdk", "openjdk"],
+    "winget_id": "Microsoft.OpenJDK.21",
+    "display_name": "OpenJDK 21 (LTS)",
+    "description": "Java Development Kit - OpenJDK 21",
+    "install_dir_hints": [
+      "C:\\Program Files\\Microsoft\\jdk-21.0*",
+      "C:\\Program Files\\Eclipse Adoptium\\jdk-21*",
+      "C:\\Program Files\\Java\\jdk-21"
+    ],
+    "path_additions": [
+      "{install_dir}\\bin"
+    ],
+    "env_vars": {
+      "JAVA_HOME": "{install_dir}",
+      "JDK_HOME":  "{install_dir}"
+    },
+    "verify_cmd": "java -version",
+    "post_install_msg": "Java installed! JAVA_HOME is set. Use 'java' and 'javac' from any terminal."
+  },
+
+  "java17": {
+    "aliases": ["jdk17", "openjdk17"],
+    "winget_id": "Microsoft.OpenJDK.17",
+    "display_name": "OpenJDK 17 (LTS)",
+    "description": "Java Development Kit - OpenJDK 17",
+    "install_dir_hints": [
+      "C:\\Program Files\\Microsoft\\jdk-17.0*",
+      "C:\\Program Files\\Eclipse Adoptium\\jdk-17*"
+    ],
+    "path_additions": ["{install_dir}\\bin"],
+    "env_vars": {
+      "JAVA_HOME": "{install_dir}",
+      "JDK_HOME":  "{install_dir}"
+    },
+    "verify_cmd": "java -version",
+    "post_install_msg": "Java 17 installed! JAVA_HOME is set."
+  },
+
+  "node": {
+    "aliases": ["nodejs", "npm"],
+    "winget_id": "OpenJS.NodeJS.LTS",
+    "display_name": "Node.js LTS",
+    "description": "Node.js JavaScript runtime (LTS)",
+    "install_dir_hints": [
+      "C:\\Program Files\\nodejs"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\nodejs",
+      "%APPDATA%\\npm"
+    ],
+    "env_vars": {
+      "NODE_HOME": "C:\\Program Files\\nodejs"
+    },
+    "verify_cmd": "node --version",
+    "post_install_msg": "Node.js installed! Use 'node', 'npm', and 'npx' from any terminal."
+  },
+
+  "go": {
+    "aliases": ["golang"],
+    "winget_id": "GoLang.Go",
+    "display_name": "Go",
+    "description": "Go programming language",
+    "install_dir_hints": [
+      "C:\\Program Files\\Go"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\Go\\bin",
+      "%USERPROFILE%\\go\\bin"
+    ],
+    "env_vars": {
+      "GOROOT": "C:\\Program Files\\Go",
+      "GOPATH": "%USERPROFILE%\\go"
+    },
+    "verify_cmd": "go version",
+    "post_install_msg": "Go installed! GOROOT and GOPATH are set."
+  },
+
+  "rust": {
+    "aliases": ["rustup", "cargo"],
+    "winget_id": "Rustlang.Rustup",
+    "display_name": "Rust (via rustup)",
+    "description": "Rust programming language toolchain",
+    "install_dir_hints": [
+      "%USERPROFILE%\\.cargo\\bin"
+    ],
+    "path_additions": [
+      "%USERPROFILE%\\.cargo\\bin"
+    ],
+    "env_vars": {
+      "CARGO_HOME":  "%USERPROFILE%\\.cargo",
+      "RUSTUP_HOME": "%USERPROFILE%\\.rustup"
+    },
+    "verify_cmd": "rustc --version",
+    "post_install_msg": "Rust installed! Use 'cargo', 'rustc', and 'rustup' from any terminal."
+  },
+
+  "dotnet": {
+    "aliases": [".net", "dotnet-sdk", "csharp"],
+    "winget_id": "Microsoft.DotNet.SDK.8",
+    "display_name": ".NET SDK 8 (LTS)",
+    "description": "Microsoft .NET SDK 8",
+    "install_dir_hints": [
+      "C:\\Program Files\\dotnet"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\dotnet"
+    ],
+    "env_vars": {
+      "DOTNET_ROOT": "C:\\Program Files\\dotnet"
+    },
+    "verify_cmd": "dotnet --version",
+    "post_install_msg": ".NET SDK installed! Use 'dotnet' from any terminal."
+  },
+
+  "ruby": {
+    "aliases": ["ruby-installer"],
+    "winget_id": "RubyInstallerTeam.RubyWithDevKit.3.2",
+    "display_name": "Ruby 3.2 (with DevKit)",
+    "description": "Ruby programming language with DevKit",
+    "install_dir_hints": [
+      "C:\\Ruby32-x64",
+      "C:\\Ruby33-x64",
+      "C:\\Ruby31-x64"
+    ],
+    "path_additions": [
+      "{install_dir}\\bin"
+    ],
+    "env_vars": {
+      "RUBY_HOME": "{install_dir}"
+    },
+    "verify_cmd": "ruby --version",
+    "post_install_msg": "Ruby installed! Use 'ruby' and 'gem' from any terminal."
+  },
+
+  "php": {
+    "aliases": [],
+    "winget_id": "PHP.PHP.8.3",
+    "display_name": "PHP 8.3",
+    "description": "PHP scripting language",
+    "install_dir_hints": [
+      "C:\\Program Files\\PHP\\v8.3",
+      "C:\\php"
+    ],
+    "path_additions": [
+      "{install_dir}"
+    ],
+    "env_vars": {
+      "PHP_HOME": "{install_dir}"
+    },
+    "verify_cmd": "php --version",
+    "post_install_msg": "PHP installed! Use 'php' from any terminal."
+  },
+
+  "julia": {
+    "aliases": [],
+    "winget_id": "Julialang.Julia",
+    "display_name": "Julia",
+    "description": "Julia programming language",
+    "install_dir_hints": [
+      "C:\\Program Files\\Julia*\\bin\\.."
+    ],
+    "path_additions": [
+      "{install_dir}\\bin"
+    ],
+    "env_vars": {
+      "JULIA_HOME": "{install_dir}"
+    },
+    "verify_cmd": "julia --version",
+    "post_install_msg": "Julia installed! Use 'julia' from any terminal."
+  }
+}

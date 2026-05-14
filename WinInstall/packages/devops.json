@@ -1,0 +1,120 @@
+{
+  "_category": "DevOps & Cloud",
+  "_description": "Containers, orchestration, IaC, and cloud CLI tools",
+
+  "docker": {
+    "aliases": ["docker-desktop"],
+    "winget_id": "Docker.DockerDesktop",
+    "display_name": "Docker Desktop",
+    "description": "Docker Desktop for Windows",
+    "install_dir_hints": [
+      "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\Docker\\Docker\\resources\\bin",
+      "%APPDATA%\\Docker\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "docker --version",
+    "post_install_msg": "Docker Desktop installed! Launch Docker Desktop first, then use 'docker' from any terminal."
+  },
+
+  "kubectl": {
+    "aliases": ["kubernetes", "k8s"],
+    "winget_id": "Kubernetes.kubectl",
+    "display_name": "kubectl",
+    "description": "Kubernetes command-line tool",
+    "install_dir_hints": [
+      "%USERPROFILE%\\.kubectl",
+      "C:\\Program Files\\kubectl"
+    ],
+    "path_additions": [
+      "%USERPROFILE%\\.kubectl"
+    ],
+    "env_vars": {},
+    "verify_cmd": "kubectl version --client",
+    "post_install_msg": "kubectl installed! Configure your kubeconfig and use 'kubectl' from any terminal."
+  },
+
+  "terraform": {
+    "aliases": ["tf"],
+    "winget_id": "Hashicorp.Terraform",
+    "display_name": "Terraform",
+    "description": "HashiCorp Terraform infrastructure-as-code tool",
+    "install_dir_hints": [
+      "C:\\Program Files\\terraform",
+      "C:\\HashiCorp\\Terraform"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\terraform"
+    ],
+    "env_vars": {},
+    "verify_cmd": "terraform version",
+    "post_install_msg": "Terraform installed! Use 'terraform' from any terminal."
+  },
+
+  "helm": {
+    "aliases": [],
+    "winget_id": "Helm.Helm",
+    "display_name": "Helm",
+    "description": "Kubernetes package manager",
+    "install_dir_hints": [
+      "C:\\Program Files\\helm"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\helm"
+    ],
+    "env_vars": {},
+    "verify_cmd": "helm version",
+    "post_install_msg": "Helm installed! Use 'helm' from any terminal."
+  },
+
+  "awscli": {
+    "aliases": ["aws"],
+    "winget_id": "Amazon.AWSCLI",
+    "display_name": "AWS CLI",
+    "description": "Amazon Web Services command-line interface",
+    "install_dir_hints": [
+      "C:\\Program Files\\Amazon\\AWSCLIV2"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\Amazon\\AWSCLIV2"
+    ],
+    "env_vars": {},
+    "verify_cmd": "aws --version",
+    "post_install_msg": "AWS CLI installed! Run 'aws configure' to set up credentials."
+  },
+
+  "azurecli": {
+    "aliases": ["az", "azure"],
+    "winget_id": "Microsoft.AzureCLI",
+    "display_name": "Azure CLI",
+    "description": "Microsoft Azure command-line interface",
+    "install_dir_hints": [
+      "C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\CLI2\\wbin"
+    ],
+    "path_additions": [
+      "C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\CLI2\\wbin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "az --version",
+    "post_install_msg": "Azure CLI installed! Run 'az login' to authenticate."
+  },
+
+  "gcloud": {
+    "aliases": ["google-cloud", "gcp"],
+    "winget_id": "Google.CloudSDK",
+    "display_name": "Google Cloud SDK",
+    "description": "Google Cloud Platform CLI tools",
+    "install_dir_hints": [
+      "C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk\\bin",
+      "C:\\Users\\%USERNAME%\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\bin"
+    ],
+    "path_additions": [
+      "C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "gcloud --version",
+    "post_install_msg": "Google Cloud SDK installed! Run 'gcloud init' to configure."
+  }
+}

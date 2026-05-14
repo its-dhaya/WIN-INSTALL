@@ -1,0 +1,80 @@
+{
+  "_category": "Editors & Shells",
+  "_description": "Code editors, IDEs, and terminal shells",
+
+  "vscode": {
+    "aliases": ["code", "visual-studio-code"],
+    "winget_id": "Microsoft.VisualStudioCode",
+    "display_name": "Visual Studio Code",
+    "description": "VS Code editor by Microsoft",
+    "install_dir_hints": [
+      "%LOCALAPPDATA%\\Programs\\Microsoft VS Code"
+    ],
+    "path_additions": [
+      "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "code --version",
+    "post_install_msg": "VS Code installed! Use 'code .' to open any folder from the terminal."
+  },
+
+  "powershell": {
+    "aliases": ["pwsh", "powershell7"],
+    "winget_id": "Microsoft.PowerShell",
+    "display_name": "PowerShell 7",
+    "description": "PowerShell 7 cross-platform shell",
+    "install_dir_hints": [
+      "C:\\Program Files\\PowerShell\\7"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\PowerShell\\7"
+    ],
+    "env_vars": {},
+    "verify_cmd": "pwsh --version",
+    "post_install_msg": "PowerShell 7 installed! Use 'pwsh' from any terminal."
+  },
+
+  "windowsterminal": {
+    "aliases": ["wt", "terminal"],
+    "winget_id": "Microsoft.WindowsTerminal",
+    "display_name": "Windows Terminal",
+    "description": "Modern Windows Terminal with tabs and themes",
+    "install_dir_hints": [],
+    "path_additions": [],
+    "env_vars": {},
+    "verify_cmd": "wt --version",
+    "post_install_msg": "Windows Terminal installed! Launch it from the Start menu."
+  },
+
+  "neovim": {
+    "aliases": ["nvim"],
+    "winget_id": "Neovim.Neovim",
+    "display_name": "Neovim",
+    "description": "Neovim - hyperextensible Vim-based text editor",
+    "install_dir_hints": [
+      "C:\\Program Files\\Neovim\\bin\\.."
+    ],
+    "path_additions": [
+      "C:\\Program Files\\Neovim\\bin"
+    ],
+    "env_vars": {},
+    "verify_cmd": "nvim --version",
+    "post_install_msg": "Neovim installed! Use 'nvim' from any terminal."
+  },
+
+  "notepadplusplus": {
+    "aliases": ["notepad++", "npp"],
+    "winget_id": "Notepad++.Notepad++",
+    "display_name": "Notepad++",
+    "description": "Notepad++ text and code editor",
+    "install_dir_hints": [
+      "C:\\Program Files\\Notepad++"
+    ],
+    "path_additions": [
+      "C:\\Program Files\\Notepad++"
+    ],
+    "env_vars": {},
+    "verify_cmd": "notepad++ -version",
+    "post_install_msg": "Notepad++ installed!"
+  }
+}
